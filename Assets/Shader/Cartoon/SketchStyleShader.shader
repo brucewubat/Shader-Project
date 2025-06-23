@@ -35,19 +35,20 @@ Shader "Custom/Cartoon/SketchStyleShader"
             CBUFFER_START(UnityPerMaterial)
                 float4 _Color;
                 float _TileFactor;
-                TEXTURE2D(_Hatch0);
-                SAMPLER(sampler_Hatch0);
-                TEXTURE2D(_Hatch1);
-                SAMPLER(sampler_Hatch1);
-                TEXTURE2D(_Hatch2);
-                SAMPLER(sampler_Hatch2);
-                TEXTURE2D(_Hatch3);
-                SAMPLER(sampler_Hatch3);
-                TEXTURE2D(_Hatch4);
-                SAMPLER(sampler_Hatch4);
-                TEXTURE2D(_Hatch5);
-                SAMPLER(sampler_Hatch5);
             CBUFFER_END
+            
+            TEXTURE2D(_Hatch0);
+            SAMPLER(sampler_Hatch0);
+            TEXTURE2D(_Hatch1);
+            SAMPLER(sampler_Hatch1);
+            TEXTURE2D(_Hatch2);
+            SAMPLER(sampler_Hatch2);
+            TEXTURE2D(_Hatch3);
+            SAMPLER(sampler_Hatch3);
+            TEXTURE2D(_Hatch4);
+            SAMPLER(sampler_Hatch4);
+            TEXTURE2D(_Hatch5);
+            SAMPLER(sampler_Hatch5);
 
             struct a2v {
 				float4 vertex : POSITION;
