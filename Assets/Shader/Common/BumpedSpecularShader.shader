@@ -20,15 +20,16 @@ Shader "Custom/Common/BumpedSpecularShader"
 
         CBUFFER_START(UnityPerMaterial)
             half4 _Color;
-            TEXTURE2D(_MainTex);
-            SAMPLER(sampler_MainTex);
             float4 _MainTex_ST;
-            TEXTURE2D(_BumpMap);
-            SAMPLER(sampler_BumpMap);
             float4 _BumpMap_ST;
             half4 _Specular;
             half _Gloss;
         CBUFFER_END
+        
+        TEXTURE2D(_MainTex);
+        SAMPLER(sampler_MainTex);
+        TEXTURE2D(_BumpMap);
+        SAMPLER(sampler_BumpMap);
 
         struct Attributes
         {

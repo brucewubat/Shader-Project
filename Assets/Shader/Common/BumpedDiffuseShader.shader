@@ -43,11 +43,11 @@ Shader "Custom/Common/BumpedDiffuseShader"
                 half4 _Color;
                 float4 _MainTex_ST;
                 float4 _BumpMap_ST;
-                TEXTURE2D(_MainTex);
-                SAMPLER(sampler_MainTex);
-                TEXTURE2D(_BumpMap);
-                SAMPLER(sampler_BumpMap);
             CBUFFER_END
+            TEXTURE2D(_MainTex);
+            SAMPLER(sampler_MainTex);
+            TEXTURE2D(_BumpMap);
+            SAMPLER(sampler_BumpMap);
             
 
             v2f vert (appdata v)
